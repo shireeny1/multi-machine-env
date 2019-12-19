@@ -6,7 +6,7 @@
     - ``config.vm.define`` is the method call that defines multiple machines within the same project Vagrantfile
     - This creates a vagrant configuration within a configuration
 6. Vagrantfile should look like this:
-    - ``config.vm.define "app" do |app|``
+    - ``config.vm.define "app" do |app|
 
           app.vm.box = "ubuntu/xenial64"
 
@@ -18,9 +18,9 @@
 
           app.vm.provision "shell", path: "environment/app/provision.sh", privileged: false
 
-      ``end``
+        end``
 
-    - ``config.vm.define "db" do |db|``
+    - ``config.vm.define "db" do |db|
 
           db.vm.box = "ubuntu/xenial64"
 
@@ -32,7 +32,7 @@
 
           db.vm.provision "shell", path: "environment/db/provision.sh", privileged: false
 
-      ``end``
+        end``
 
 7. Add (copy) the provision.sh files for both the app and db
 8. Add (copy) in the mongod.conf file
