@@ -1,4 +1,4 @@
-# Install required plugins
+# Install required plugins - you need admin rights
 required_plugins = ["vagrant-hostsupdater"]
 required_plugins.each do |plugin|
     exec "vagrant plugin install #{plugin}" unless Vagrant.has_plugin? plugin
