@@ -43,3 +43,9 @@
 13. Run ``npm install`` and ``npm start``
 14. Go onto Google Chrome and type in ``develpment.local:3000`` into the search bar
   - You should be notified that "The app is running correctly"
+
+## Connecting the database via mongoose.connect()
+1. ``cd`` into ``app`` in your vm
+2. ``npm install``
+3. ``node seeds/seed.js`` - This seeds in information in showing you the posts
+4. ``npm start``
